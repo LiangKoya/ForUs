@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page -en</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome!</h1>
+        <ul class="lang">
+            <li class="choices">Languages/语言/言語: </li>
+            <li class="en" style="color:black";>English</li>
+            <li class="cn"><a href="index-cn.html">/中文</a></li>
+            <li class="jn"><a href="index-jp.html">/日本語</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <label>Your full name is <input type="text" value="张紫嫣" id="Name"></label>
+        <input type="button" value="Confirm" id="button">
+        <p id="welcome_message"></p>
+        <lable>Type your password: <input type="password" id="pass" value="20010805"></lable>
+        <input type="button" value="Log in" id="login_button">
+        <p id="pass_result"></p>
+        <p id="hint"></p>
+        <p id="warning"></p>
+    </div>
+    
+</body>
+<script src="javascript.js"></script>
+</html>
