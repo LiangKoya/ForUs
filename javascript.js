@@ -8,7 +8,8 @@ confirm_button.addEventListener("click",disp_name);
 //let welcome_message = document.getElementById("welcome_message");
 
 function disp_name(){
-    welcome_message.innerText = "Hi, " + user_name.value + "! This is OUR website!"
+    welcome_message.innerText = "Hi, " + user_name.value + "!"
+    welcome_message2.innerText = "This is OUR website!"
 }
 
 user_name.addEventListener("focus", () => {
