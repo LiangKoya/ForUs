@@ -8,8 +8,13 @@ confirm_button.addEventListener("click",disp_name);
 //let welcome_message = document.getElementById("welcome_message");
 
 function disp_name(){
-    welcome_message.innerText = "Hi, " + user_name.value + "!"
-    welcome_message2.innerText = "This is OUR website!"
+    if (user_name.value == "") {
+        welcome_message.innerText = "Enter your name"
+    }
+    else{
+        welcome_message.innerText = "Hi, " + user_name.value + "!"
+        welcome_message2.innerText = "This is OUR website!"
+    }
 }
 
 user_name.addEventListener("focus", () => {
@@ -41,7 +46,8 @@ function disp_login_result(){
             },3000)
         }
         else{
-            alert("Babe, that\'s wrong. Remember THE DATE!")
+            //alert("Babe, that\'s wrong. Remember THE DATE!")
+            alert("wrong password")
         }
     }
     else if(user_name.value == "郭强"){

@@ -1,0 +1,51 @@
+html,
+body{
+    height: 100%;
+    word-break: keep-all;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.window{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(236, 236, 235);
+}
+
+h1{
+    background-color: rgb(144, 211, 238);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: calc(100vw / 1072 * 33);
+}
+
+.msg1{
+    width: 60%;
+    border:double 4px red;
+    /* word-break: keep-all; */
+    text-align: center;
+    padding: 3%;
+    font-size: calc(100vw / 1072 * 16); /* (100%vw / view port width * px)*/
+}
+
+.updates ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.updates li{
+    width: 70%;
+    border: 2px solid black;
+    list-style: none;
+    font-size: calc(100vw / 1072 * 12);
+    padding: calc(100vw / 1072 * 8);
+}
